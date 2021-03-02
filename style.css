@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+	width: 100vw;
+	height: 100vh;
+	background-color: #19212a;
+	color: white;
+}
+.link {
+	color: #6ca22d;
+}
+.card {
+	background-color: #212b36;
+	border-radius: 10px;
+}
+.cnf {
+	color: #cc0e74;
+}
+.act {
+	color: #2980b9;
+}
+.dth {
+	color: #ec314b;
+}
+.rcv {
+	color: #05b584;
+}
+svg {
+	height: 30px;
+	width: 30px;
+}

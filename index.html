@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/png" href="./favicon.png" />
+
+        <!-- Primary Meta Tags -->
+		<title>Covid-19 Dashboard</title>
+		<meta name="title" content="Covid-19 Dashboard" />
+        <meta name="description" content="Dashboard Showcasing Statistics of Covid-19 Cases" />
+        
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h3 class="m-4">Covid-19 Dashboard</h3>
+					<p>
+						Data sources from
+						<a
+							href="https://github.com/mathdroid/covid-19-api"
+							class="link"
+							target="_blank"
+							>Muhammad Mustadi's</a
+						>
+						API
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 mt-4 text-center">
+					<h3>Global Case</h3>
+					<p class="link">Last updated: <span class="link" id="global-updated"></span></p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="card text-center m-2 card-bg">
+						<h3 class="m-4 cnf" id="global-cnf"></h3>
+						<h4 class="m-4">Confirmed</h4>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="card text-center m-2 card-bg">
+						<h3 class="m-4 act" id="global-act"></h3>
+						<h4 class="m-4">Active</h4>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="card text-center m-2 card-bg">
+						<h3 class="m-4 dth" id="global-dth"></h3>
+						<h4 class="m-4">Deaths</h4>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="card text-center m-2 card-bg">
+						<h3 class="m-4 rcv" id="global-rcv"></h3>
+						<h4 class="m-4">Recovered</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-12 mt-4 text-center">
+					<h3 id="local">India</h3>
+					<p class="link">Last updated: <span class="link" id="local-updated"></span></p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="card text-center m-2 card-bg">
+						<h3 class="m-4 cnf" id="local-cnf"></h3>
+						<h4 class="m-4">Confirmed</h4>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="card text-center m-2 card-bg">
+						<h3 class="m-4 act" id="local-act"></h3>
+						<h4 class="m-4">Active</h4>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="card text-center m-2 card-bg">
+						<h3 class="m-4 dth" id="local-dth"></h3>
+						<h4 class="m-4">Deaths</h4>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="card text-center m-2 card-bg">
+						<h3 class="m-4 rcv" id="local-rcv"></h3>
+						<h4 class="m-4">Recovered</h4>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="row m-4 justify-content-center">
+					<div class="col-12 m-4 text-center">
+						<h5>
+							Made by
+							<a class="link" href="https://github.com/arsadvc" target="_blank"
+								>Arshath</a
+							>
+
+							<svg viewBox="0 0 16 16" fill="currentColor" class="mx-2">
+								<path
+									fill-rule="evenodd"
+									d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+								></path>
+							</svg>
+						</h5>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="/script.js"></script>
+	</body>
+</html>
